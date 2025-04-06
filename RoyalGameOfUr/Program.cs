@@ -4,7 +4,6 @@ using RoyalGameOfUr.UI;
 using RoyalGameOfUr.UI.Interfaces;
 using System.Text;
 
-
 try
 {
     Console.Title = "The Royal Game of Ur";

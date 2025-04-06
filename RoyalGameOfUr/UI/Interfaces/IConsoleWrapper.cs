@@ -1,43 +1,67 @@
-namespace RoyalGameOfUr.UI.Interfaces
+namespace RoyalGameOfUr.UI.Interfaces;
+
+/// <summary>
+///     Interface for console operations to enable testability
+/// </summary>
+public interface IConsoleWrapper
 {
     /// <summary>
-    /// Interface for console operations to enable testability
+    ///     Gets the current foreground color
     /// </summary>
-    public interface IConsoleWrapper
-    {
-        /// <summary>
-        /// Writes a string to the console
-        /// </summary>
-        void Write(string value);
+    ConsoleColor ForegroundColor { get; }
 
-        /// <summary>
-        /// Writes a line to the console
-        /// </summary>
-        void WriteLine(string value = "");
+    /// <summary>
+    ///     Gets the current background color
+    /// </summary>
+    ConsoleColor BackgroundColor { get; }
 
-        /// <summary>
-        /// Sets the foreground color of the console
-        /// </summary>
-        void SetForegroundColor(ConsoleColor color);
+    /// <summary>
+    ///     Gets the current cursor left position
+    /// </summary>
+    int CursorLeft { get; }
 
-        /// <summary>
-        /// Sets the background color of the console
-        /// </summary>
-        void SetBackgroundColor(ConsoleColor color);
+    /// <summary>
+    ///     Gets the current cursor top position
+    /// </summary>
+    int CursorTop { get; }
 
-        /// <summary>
-        /// Resets the console colors to default
-        /// </summary>
-        void ResetColors();
+    /// <summary>
+    ///     Writes a string to the console
+    /// </summary>
+    void Write(string value);
 
-        /// <summary>
-        /// Reads a key from the console
-        /// </summary>
-        ConsoleKeyInfo ReadKey(bool intercept = false);
+    /// <summary>
+    ///     Writes a line to the console
+    /// </summary>
+    void WriteLine(string value = "");
 
-        /// <summary>
-        /// Clears the console
-        /// </summary>
-        void Clear();
-    }
+    /// <summary>
+    ///     Sets the foreground color of the console
+    /// </summary>
+    void SetForegroundColor(ConsoleColor color);
+
+    /// <summary>
+    ///     Sets the background color of the console
+    /// </summary>
+    void SetBackgroundColor(ConsoleColor color);
+
+    /// <summary>
+    ///     Resets the console colors to default
+    /// </summary>
+    void ResetColors();
+
+    /// <summary>
+    ///     Reads a key from the console
+    /// </summary>
+    ConsoleKeyInfo ReadKey(bool intercept = false);
+
+    /// <summary>
+    ///     Clears the console
+    /// </summary>
+    void Clear();
+
+    /// <summary>
+    ///     Sets the cursor position
+    /// </summary>
+    void SetCursorPosition(int left, int top);
 }

@@ -7,15 +7,16 @@
 ### UI
 
 - [x] Game board 
-- [ ] Add, move, and remove player pieces.
-- [ ] Simulate dice rolls per distribtuin 
-- [ ] Score board. Track pieces of each player. 
+- [x] Add, move, and remove player pieces.
+- [x] Simulate dice rolls per distribtuin 
+- [x] Score board. Track pieces of each player. 
+- [ ] Render pieces for vertical board views
 
 ### Gameplay
 
-- [ ] Implement game rules. 
-- [ ] Implement player paths 
-- [ ] Human vs Human
+- [x] Implement game rules. 
+- [x] Implement player paths 
+- [x] Human vs Human
 - [ ] Human vs Computer
 - [ ] Human vs AI
 
