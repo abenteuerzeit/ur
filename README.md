@@ -1,5 +1,7 @@
 # The Royal Game of UR Console Game
 
+![urGameBoard](https://github.com/user-attachments/assets/ef6cdacd-e2d8-4cfb-a9e8-66a4230e5ab2)
+
 ### TODO
 
 ### UI
